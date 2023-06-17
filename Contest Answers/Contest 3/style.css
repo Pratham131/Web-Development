@@ -1,0 +1,704 @@
+body{
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    width: 1728px;
+    height: 4370px;
+    color: #ffffff;
+    /* border: 2px solid green; */
+}
+
+.header-section {
+    background-color: #000000;
+    /* position: fixed; */
+    width: 1724px;
+    height: 107px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    /* justify-content:space-evenly; */
+}
+
+.header-section .res-name {
+    width: 333px;
+    height: 51px;
+    margin-left: 30px;
+    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-section .res-name header { 
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 0px;
+    letter-spacing: 0.06em;
+    
+}
+
+ .header-section .navbar {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.header-section .navbar .nav-items{
+
+    width: 159px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000000;
+    
+}
+
+.header-section .navbar .nav-items a {
+    padding: 0px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0px;
+} 
+
+.header-section .social-icon{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly;
+    column-gap: 28.5px; */
+}
+
+.header-section .social-icon .img1 {
+    position: absolute;
+    width: 62.33px;
+    height: 43.12px;
+    left: 1446.02px;
+    top: 25px;
+    
+}
+
+.header-section .social-icon .img2 {
+    position: absolute;
+    width: 52px;
+    height: 44px;
+    left: 1547.02px;
+    top: 37px;
+}
+
+.header-section .social-icon .img3 {
+    position: absolute;
+    width: 47px;
+    height: 51px;
+    left: 1625.02px;
+    top: 33px;
+    
+}
+
+.header-section:hover, img:hover {
+    border: 2px solid steelblue;
+}
+
+.header-section .res-name header:hover, .header-section .navbar .nav-items a:hover {
+    text-decoration: underline 2px solid steelblue;
+}
+
+.header-section .res-name:active, .header-section .navbar .nav-items:active {
+    border: 2px solid steelblue;
+    
+}
+
+/* Main section  */
+
+.main-container {
+    /* border: 2px solid red; */
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 111px;
+}
+
+/* Pizza Container Section */
+
+.main-container .pizza-container {
+    position: absolute;
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+    width: 1724px;
+    height: 1006px;
+    background-image: url(./Assets/pizza1.png) ;   
+}
+
+.main-container .pizza-container:hover {
+    border: 2px solid steelblue;
+}
+
+.main-container .pizza-container .stage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 17px;
+    width: 902px;
+    align-items: center;
+
+}
+
+.main-container .pizza-container .stage .head {
+    position: absolute;
+    margin-top: 129px;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly; 
+
+    font-family: 'Quattrocento', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 81px;
+    line-height: 108px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #ffffff;
+}
+
+.main-container .pizza-container .stage .head:active {
+    border: 5px solid steelblue;
+}
+
+
+.main-container .pizza-container .stage .rect {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 586px;
+    height: 13px;
+    left: 116px;
+    top: 533px;
+    background: #F24C4C;
+    box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.25);
+    
+}
+
+.main-container .pizza-container .stage .pizza-content {
+    position: absolute;
+    width: 599px;
+    height: 325px;
+    left: 116px;
+    top: 613px;
+    
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.09em;
+    color: #ffffff;
+    
+}
+
+.main-container .pizza-container .stage .pizza-content:hover, .main-container .pizza-container .stage .head:hover {
+    text-decoration: underline 2px solid steelblue;
+}
+
+/* About us Section  */
+
+.about-container { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container .about-head {
+    position: absolute;
+    width: 526px;
+    left: 599px;
+    height: 60px;
+    top: 1200px;
+
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.about-container .about-head h1{
+    font-family: 'Quattrocento', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 0px;
+    color: #FFFFFF;
+}
+
+.about-container .about-head:hover {
+    border: 2px solid steelblue;
+}
+
+.about-container .box {
+    position: absolute;
+    width: 526px;
+    height: 10px;
+    left: 599px;
+    top: 1289px;
+    background: #B62828;
+}
+
+.about-container .box:hover {
+    border: 2px solid steelblue;
+}
+
+.about-content {
+    position: absolute;
+    top: 1385px; 
+    left: 0px;
+    display: flex;
+    
+    
+}
+
+.about-container .about-content .text-content {
+    position: absolute;
+    width: 677px;
+    height: 420px;
+    left: 193px;    
+
+}
+
+.about-container .about-content .text-content .box-ab {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 535px;
+    height: 4px;
+    left: 0px;
+    top: 0px;
+    background: #F24C4C;
+}
+
+.about-container .about-content .text-content p {
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.09em;
+
+    color: #FFFFFF;
+}
+
+.about-container .about-content .text-content .box-ab:hover {
+    border: 1px solid steelblue;
+}
+
+.about-container .about-content .text-content p:hover{
+    text-decoration: underline 2px solid steelblue;
+}
+
+.about-container .about-content .img-content {
+    position: absolute;
+    width: 631px;
+    height: 506px;
+    left: 949px;
+}
+
+
+/* Menu Section  */
+.menu-container { 
+    width: 100%;
+    display: flex;
+    
+}
+
+/* .menu-container .menu-head {
+    display: flex;
+    flex-direction: column;
+} */
+
+.main-container .menu-head .heading-menu {
+    position: absolute;
+    width: 474px;
+    height: 54px;
+    left: 609px;
+    top: 2021px;
+
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.main-container .menu-head .heading-menu h1 {
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    color: #FFFFFF;
+}
+
+.main-container .menu-head .heading-menu h1:hover {
+    text-decoration: underline 2px solid steelblue;
+}
+
+.main-container .menu-head .heading-menu:active {
+    border: 2px solid steelblue;
+}
+
+.menu-container .menu-head .menu-box {
+    position: absolute;
+    width: 474px;
+    height: 9px;
+    left: 609px;
+    top: 2087px;
+    
+    background: #B62828;    
+}
+
+.menu-container .menu-head .menu-box:hover {
+    border: 2px solid steelblue;
+}
+
+.menu-container .menu-head .menu-content {
+    position: absolute;
+    width: 1315px;
+    height: 378px;
+    left: 212px;
+    top: 2153px;
+}
+
+.menu-container .menu-head .menu-content p{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.09em;   
+    color: #FFFFFF;
+}
+
+.menu-container .menu-head .menu-content p:hover {
+    text-decoration: underline 2px solid steelblue; 
+}
+
+.menu-container .grid-menu {
+    
+    position: relative;
+    width: 1728px;
+    left: 0px;
+    top: 2389px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    row-gap: 61px;
+    column-gap: 35px;
+}
+
+.menu-container .grid-menu .card {
+    display: flex;
+    column-gap: 35px;
+
+}
+
+.menu-container .grid-menu .card .content p{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.menu-container .grid-menu .card .content p:hover {
+    text-decoration: underline 2px solid steelblue; 
+}
+
+.menu-container .grid-menu .card .content h1{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 0px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: #F2C94C;
+}
+
+.menu-container .grid-menu .card .content h1:hover {
+    text-decoration: underline 2px solid steelblue; 
+}
+
+
+/* Find us section */
+.findus-container {
+    width: 1728px;
+    display: flex;
+    justify-content: center;
+}
+
+.findus-container .find {
+    position: absolute;
+    width: 474px;
+    height: 54px;
+    top: 3256px;
+    
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.findus-container .find:active {
+    border: 2px solid steelblue;
+}
+
+.findus-container .find:hover {
+    text-decoration: underline 2px solid steelblue;
+}
+
+.findus-container .find h1 {
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.findus-container .box-fi {
+    position: absolute;
+    width: 499px;
+    height: 9px;
+    top: 3329px;
+    background: #B62828;    
+}
+
+.findus-container .box-fi:hover {
+    border: 2px solid steelblue;
+}
+
+.findus-container .find-cont {
+    display: flex;
+    column-gap: 31px;
+}
+
+.findus-container .find-cont .fcon {
+    top:3402px;
+    left: 186px;
+    position: absolute;
+    width: 640px;
+    height: 438px;
+
+    border: 2px solid red;
+}
+
+.findus-container .find-cont .fcon p {
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.09em;
+    
+    color: #FFFFFF;
+}
+
+.findus-container .find-cont .fcon p:hover {
+    text-decoration: underline 2px solid steelblue;
+}
+
+.findus-container .find-cont .fi-img {
+    top: 3402px;
+    position: absolute;
+    width: 685px;
+    height: 438px;
+
+    
+}
+
+
+/* Footer  */
+.footer {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 262px;
+    width: 1719px;
+
+    border: 2px solid black;
+
+}
+
+.footer:hover {
+    border: 2px solid steelblue;
+}
+
+.footer .foot-img img {
+    position: absolute;
+    left: 49px;
+    bottom: -19px;
+    display: flex;
+    align-content: center; 
+}
+
+.footer .foot-img img:hover {
+    border: 2px solid steelblue;
+}
+
+.footer .foot-cont {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 262px;
+    width: 1719px;
+
+    column-gap: 50px;
+    
+    display: flex;   
+    justify-content: end;
+    align-content: center;
+}
+
+.footer .foot-cont p {
+    display: flex;
+    align-items: center;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px; 
+    letter-spacing: 0.09em;
+    
+    color: #FFFFFF;    
+}
+
+.footer .foot-cont p:hover {
+    text-decoration: underline 2px solid steelblue;
+}
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+
+    .main-container {
+        top: 200px;
+    }
+
+    .header-section {
+        height: 204px;
+    }
+
+    .header-section .navbar {
+        flex-direction: column;
+    }
+
+    .header-section .res-name {
+        align-items: end;
+    }
+
+    .header-section .social-icon .img1 {
+        left: 35px;
+        top: 25px;
+    }
+
+    .header-section .social-icon .img2 {
+        left: 150px;
+        top: 35px;
+    }
+
+    .header-section .social-icon .img3 {
+        left: 250px;
+        top: 35px;
+    }
+
+
+    .main-container .pizza-container .stage .rect {
+        left: 0px;
+    }
+
+    .main-container .pizza-container .stage .pizza-content{
+       left: 0px; 
+
+    }
+
+    .main-container .pizza-container .stage .head {
+        text-align: start;
+        font-weight: 500px ;
+        font-size: 70px;
+    }
+
+    .about-container .about-head {
+        left: 0px;
+        top: 1065px;
+    }
+    
+    .about-container .box {
+        left: 25px;
+        top: 1140px;
+    }
+
+    .about-content {
+        top: 1185px;
+        left: -170px;
+    }
+
+    .about-container .about-content .img-content {
+        top: 350px;
+        left: 200px;
+    }
+
+    .main-container .menu-head .heading-menu {
+        top: 2075px;
+        left: 90px;
+    }
+
+    .main-container .menu-head .heading-menu h1 {
+        font-size: 45px;
+    }
+
+    .menu-container .menu-head .menu-box {
+        left: 100px;
+        top: 2130px;
+        height: 2px;
+    }
+
+    .menu-container .menu-head .menu-content {
+        top: 2115px;
+        left: 25px;
+        width: 645px
+
+    }
+}
+
+

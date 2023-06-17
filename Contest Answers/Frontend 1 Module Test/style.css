@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    /* font-weight: 500; */
+
+}
+
+/* Navbar Section  */
+
+.navbar {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar .container-fluid {
+    width: 90%;
+}
+
+.navbar-nav {
+    padding-left: 4%;
+}
+
+
+/* Crousel SEction  */
+.carousel {
+    width: 100%;
+    height: 50%;
+}
+
+.carousel-indicators {
+    margin-bottom: 3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 5%;
+    height: 7px;
+    margin: 0px 10px;
+}
+
+.carousel-caption {
+    bottom: 4.25rem;
+}
+
+.carousel-item img {
+    height: 50rem;
+}
+
+/* Section 1 */
+.section1 {
+    margin-top: 5%;
+    width: 80%;
+}
+
+.container-section1 {
+    width: 100%;
+    column-gap: 5%;
+    margin: 1%;
+}
+
+.container-section1 .card {
+    /* height: 100%; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.container-section1 .card img {
+    width: 220px;
+    height: 180px;
+}
+
+.container-section1 .card .card-desc {
+    margin-top: 1%;
+    text-align: center;
+}
+/* Section 2  */
+
+.section2 {
+    margin-top: 5%;
+    width: 80%;
+}
+
+.section2-heading {
+    margin-bottom: 5%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 5%;
+}
+
+.wrapper .row1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 3%;
+}
+
+.wrapper .row2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 32% 67%;
+    column-gap: 3%;
+}
+
+.wrapper .row1 .row1col2 {
+
+    display: grid;
+    justify-content: space-between;
+
+    grid-template-columns: repeat(2,45%);
+    row-gap: 11%;
+    /* column-gap: 5%; */
+
+}
+
+.wrapper .row1 .row1col3 {
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    row-gap: 12%;
+}
+
+/* section 3  */
+
+.section3 {
+    margin-top: 10%;
+    width: 80%;
+}
+
+.container-section3 {
+    width: 100%;
+    column-gap: 5%;
+    margin: 1%;
+}
+
+.container-section3 .card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* height: 100%; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    margin: 5%;
+    width: 55%;
+}
+
+/* Footer SEction  */
+footer { 
+    margin-top: 2%;
+    padding: 2%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+
+}
+.footer-info {
+    width: 75%;
+
+}
+
+.footer-info .cards {
+    width: 30%;
+}
+
+
+.footer-desc {
+    /* margin-top: 2%; */
+    width: 80%;
+
+}
+
+/* Mobile Devices Media Query */
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 14px;    
+    }
+
+    .navbar {
+        height: auto !important;
+    }
+
+    /* .carousel */
+
+    .carousel-item img {
+        height: 25rem;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 7%;
+        height: 3px;
+        margin: 0px 5px;
+    }
+
+    .carousel-caption {
+        display: block !important;
+        bottom: 0.5rem;
+    }
+
+    /* SEction 1  */
+    
+    .container-section1  {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container-section1 .card {
+        width: 100%;
+        flex-direction: row;
+        margin: 2% 0%;
+    }
+
+    /* SEction 2 */
+
+    .container-section3 {
+        flex-direction: column;
+    }
+
+    .container-section3 .card {
+        width: 100%;
+        margin: 2% 0%;
+    }
+
+    /* Footer Section  */
+
+    .footer-info, .footer-desc {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .footer-info .cards {
+        width: 100%;
+    }
+
+    .footer-info ul {
+        padding-left: 0;
+    }
+
+}
+
+/* Medium Screens  */
+
+@media screen and (min-width:769px) and (max-width: 992px) {
+    * {
+        font-size: 16px;    
+    }
+
+    .navbar {
+        height: auto !important;
+    }
+
+    /* .carousel */
+
+    .carousel-item img {
+        height: 55rem;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 7%;
+        height: 3px;
+        margin: 0px 5px;
+    }
+
+    .carousel-caption {
+        display: block !important;
+        bottom: 1.5rem;
+    }
+
+    /* SEction 1  */
+    
+    .container-section1  {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .container-section1 .card {
+        width: 45%;
+        margin: 2% 0%;
+    }
+
+    /* .section2-heading */
+    /* SEction 2
+
+    .container-section3 {
+        flex-direction: column;
+    }
+
+    .container-section3 .card {
+        width: 100%;
+        margin: 2% 0%;
+    } */
+
+
+}
+
+
+
+
