@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender Form</title>
+</head>
+<body>
+    <main>
+        <h1 style="text-align: center;">Flipkart Vendor Form</h1>
+
+        <form action="#" method="post" style="margin-left: 20px;">
+
+            <div>
+                <label for="fname">Name</label> <br>
+                <input type="text" placeholder="First Name" name="fname" id="fname">
+                <input type="text" placeholder="Second Name" name="fname"> 
+            </div>
+
+            <div>
+                <label for="bdate">Date of Birth:</label> <br>
+                <input type="date" name="bdate" id="bdate">
+            </div>
+
+            <div>
+                <label for="location">Current Location:</label> <br>
+                <textarea name="location" id="location" cols="30" rows="5" placeholder="Enter Complete Address"></textarea>
+            </div>
+
+            <div>
+                <label for="mail">Email:</label> <br>
+                <input type="email" name="mail" id="mail" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+            </div>
+
+            <div>
+                <label for="adhar">Upload Adhar Card:</label> <br>
+                <input type="file">
+            </div>
+
+            <div>
+                <label for="pan">PAN card Number:</label> 
+                <input type="text" name="pan" id="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+            </div>
+
+            <div>
+                <label for="item">Items to sell:</label>  
+                <select name="item" id="item">
+                    <option value="items2sell" selected disabled>Items to sell</option>
+                    <option value="mobile">Mobile Phone</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="ac">Air Conditioner</option>
+                    <option value="tv">Television</option>
+                    <option value="ref">Refregirator</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="ind">Are you in India?</label> <br>
+                <input type="radio" name="ind" id="ind" >Yes
+                <input type="radio" name="ind" id="ind" >No
+            </div>
+
+            <div>
+                <label for="del">Locations for delivery:</label> <br>
+                <input type="checkbox" name="del" id="del">Delhi
+                <input type="checkbox" name="del" id="del">Banglore
+                <input type="checkbox" name="del" id="del">Mumbai
+            </div>
+
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

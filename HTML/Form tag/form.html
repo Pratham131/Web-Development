@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="">
+        <title>Form</title>
+    </head>
+
+    <body>
+
+        <!-- defines the action which is going to be performed on form submission 
+        you add a file path in this action, this file contains the server-side 
+        (backend) cide which handle your data-->
+        <form action="#" method="" name="form" id="form">
+
+            <div>
+                <label for="eveName">Name of the event:</label> <br>
+                <input type="text" name="eveName" id="eveName" value="JS Fest" readonly disabled>
+            </div>
+
+            <div>
+                <label for="fname" >Name*</label> <br>
+                <input type="text" name="fname" id="fname" value="Suman" maxlength="10" placeholder="enter your name" required>
+            </div>
+            
+            <div>
+                <label for="age">Age:</label> <br>
+                <input type="number" name="age" id="age" value="43" min="18" max="30">
+            </div>
+
+            <div>
+                <label for="email">Email:</label> <br>
+                <input type="email" name="email">
+            </div>
+
+            <div>
+                <label for="password">Password</label> <br>
+                <input type="password" name="password" maxlength="10">
+            </div>
+
+            <div>
+                <label for="phoneNo">Contact Number:</label> <br>
+                <input type="tel" name="phoneNo" maxlength="10" pattern="/\B\+91 [0-9]{10}\b/gm" value="9834562738">
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label> <br>
+                <input type="radio" name="gender">Male <br>
+                <input type="radio" name="gender">Female <br>
+                <input type="radio" name="gender">Trans
+            </div>
+
+            <div>
+                <label for="skills">Your Skills:</label> <br>
+                HTML: <input type="checkbox" name="Skills" checked> <br>
+                CSS: <input type="checkbox" name="skills"> <br>
+                JS: <input type="checkbox" name="skills">
+            </div>
+
+            <div>
+                <label for="time">Preffered time for Meetup:</label> <br>
+                <input type="datetime-local"> <br>
+            </div>
+
+            <div>
+            
+                <label for="topic">Chose topic for Meetup:</label>
+                <select name="topic">
+                    <option value="HTML_Tags">HTML_Tags</option> <br>
+                    <option value="CSS_Tags">CSS_Tags</option> <br>
+                    <option value="JS_Tags">JS_Tags</option> <br>
+                </select>
+            </div>
+
+            <div>
+                <label for="msg">Any Questions?</label> <br>
+                <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+            </div>
+
+            <!-- <div>
+                <label for="extraip">Exta input Types:</label>
+                <input type="color"> <br>
+                <input type="date"> <br>
+                <input type="month"> <br>
+                <input type="week"> <br>
+                <input type="file"> <br>
+                <input type="range"> <br>
+                <input type="url"> <br>
+                <input type="hidden"> <br>
+                <input type="image" src="../Assets/foreground.jpg" width="50px" height="50px"> <br> -->
+
+                <!-- type button  -->
+                <!-- <input type="button" value="submit">
+                <button>Submit</button>
+           
+                <input type="search">
+            </div> -->
+
+            <div> 
+                <input type="submit">
+                <input type="reset" disabled>
+
+                
+            </div>
+
+        </form>
+    </body>
+</html>
