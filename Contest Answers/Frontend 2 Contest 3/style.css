@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header_container {
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.icon h1 {
+    font-weight: 700;
+}
+
+.icon h1>b {
+    color: rgb(75, 129, 226);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu>button {
+    border: none;
+    background-color: rgb(75, 129, 226);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.switch-container {
+    position: relative;
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch-label {
+    display: block;
+    width: 40px;
+    height: 15px;
+    background-color: rgb(35,66,111);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.switch-label::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 26px;
+    height: 26px;
+    background-color: rgb(53,119,202);
+    border-radius: 50%;
+    transition: left 0.3s;
+}
+
+.switch-input:checked+.switch-label::after {
+    left: calc(100% - 20px)
+}
+
+.grid-list {
+    display: flex;
+}
+
+.grid-list > button {
+    width: 50%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.card {
+    border-radius: 20px ;
+    padding: 15px 20px;
+    background-color: rgb(26,26,27) ;
+    color: rgb(123,123,123);
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > img, .list-logo > img {
+    width: 55px;
+    height: 55px;
+}
+
+.info {
+    padding: 5px 0;
+}
+
+.info > b {
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+span.percent {
+    border: 2px solid rgb(1, 210, 1);
+    color: rgb(1, 210, 1) !important ;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 60px;
+    text-align: center;
+}
+
+.bottom > b {
+    margin: 10px 0;
+    color: rgb(1, 210, 1)
+}
+
+.bottom > span, td > span {
+    margin-top: 5px ;
+    color: rgb(123,123,123);
+}
+
+#grid-container {
+    padding: 2% 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+table {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.list-logo {
+    text-align: end;
+    padding-right: 15px;
+}
+
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+tr:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 786px) {
+    #grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
