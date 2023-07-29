@@ -4,6 +4,12 @@ let listBtn = document.getElementById("list");
 let gridContainer = document.getElementById("grid-container");
 let table = document.getElementById("table");
 
+window.addEventListener("load", function() {
+    gridBtn.style.color = "rgb(75, 129, 226)";
+    gridBtn.style.borderBottom = "2px solid rgb(75, 129, 226)";
+    fetchCryptoCards();
+})
+
 gridBtn.addEventListener("click", () => {
     gridBtn.style.color = "rgb(75, 129, 226)";
     gridBtn.style.borderBottom = "2px solid rgb(75, 129, 226)";
