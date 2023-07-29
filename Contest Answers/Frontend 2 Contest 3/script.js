@@ -7,6 +7,7 @@ let table = document.getElementById("table");
 window.addEventListener("load", function() {
     gridBtn.style.color = "rgb(75, 129, 226)";
     gridBtn.style.borderBottom = "2px solid rgb(75, 129, 226)";
+
     fetchCryptoCards();
 })
 
@@ -15,6 +16,7 @@ gridBtn.addEventListener("click", () => {
     gridBtn.style.borderBottom = "2px solid rgb(75, 129, 226)";
     listBtn.style.color = "white";
     listBtn.style.borderBottom = "none";
+    gridContainer.style.display = "grid";
 
     clearListData()
     clearGridData()
@@ -26,7 +28,7 @@ listBtn.addEventListener("click", () => {
     listBtn.style.borderBottom = "2px solid rgb(75, 129, 226)";
     gridBtn.style.color = "white";
     gridBtn.style.borderBottom = "none";
-    gridContainer.style.display ="none";
+    gridContainer.style.display = "none";
 
     clearGridData()
     clearListData()
