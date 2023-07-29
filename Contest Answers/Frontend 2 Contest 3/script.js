@@ -26,6 +26,7 @@ listBtn.addEventListener("click", () => {
     listBtn.style.borderBottom = "2px solid rgb(75, 129, 226)";
     gridBtn.style.color = "white";
     gridBtn.style.borderBottom = "none";
+    gridContainer.style.display ="none";
 
     clearGridData()
     clearListData()
@@ -132,7 +133,7 @@ function appendListData(cryptoListData) {
             <td><span class="percent">${cryptoListData[i].price_change_percentage_24h.toFixed(
                 2
             )}%</span></td>
-            <td><b>$${cryptoListData[i].current_price}</b></td>
+            <td><b class="currentPrice">$${cryptoListData[i].current_price}</b></td>
             <td><span>${cryptoListData[i].total_volume}</span></td>
             <td><span>${cryptoListData[i].market_cap}</span></td>`
 

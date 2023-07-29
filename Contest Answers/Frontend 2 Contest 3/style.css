@@ -145,7 +145,7 @@ span.percent {
 
 .bottom > b {
     margin: 10px 0;
-    color: rgb(1, 210, 1)
+    color: rgb(1, 210, 1);
 }
 
 .bottom > span, td > span {
@@ -162,7 +162,7 @@ span.percent {
 
 table {
     width: 100%;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .list-logo {
@@ -179,6 +179,10 @@ th,td {
 tr:hover {
     transition: 0.5s;
     transform: scale(1.05);
+}
+
+b.currentPrice {
+    color: rgb(1, 210, 1);
 }
 
 @media screen and (max-width: 786px) {
