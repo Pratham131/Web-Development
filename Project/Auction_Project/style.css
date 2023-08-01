@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.773);
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#container {
+    /* border: 2px solid red; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid rgba(217, 217, 214, 0.475);
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(217, 217, 214, 0.475);
+    
+    padding: 10px;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.top{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+    align-items: center;
+}
+
+.left {
+    /* padding: 10px 0; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left > .case-number {
+    font-size: 12px;
+}
+
+.left > .badge {
+    padding: 2px 4px;
+    /* background-color: green; */
+    /* color: white; */
+    border-radius: 3px;
+}
+
+.right {
+    /* border: 1ps solid ; */
+    font-size: 12px;
+}
+
+.bottom {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bottom > .price {
+    /* text-align: right; */
+    align-self: flex-end;
+}
+
+.approved {
+    background-color: blue;
+    color: white;
+}
+
+.pending {
+    background-color: yellow;
+    color: black;
+}
+
+.completed {
+    color: white;
+    background-color: green;
+}
+
+.cancelled {
+    background-color: red;
+    columns: white
+    ;
+}
+
+@media  screen and (min-width: 700px) {
+    #container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    #container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
