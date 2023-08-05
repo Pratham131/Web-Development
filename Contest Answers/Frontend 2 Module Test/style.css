@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(43,44,81);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Header Section */
+
+header {
+    text-align: center;
+    padding: 5vh;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+/* Main Section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    height: 60px;
+    width: 496px;
+    padding: 0 10px;
+    background-color: rgb(40, 45, 79) ;
+    border-radius: 10px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.9) 0px 18px 36px -18px inset;
+}
+
+.material-symbols-outlined {
+    color: rgba(235, 235, 245, 0.6);
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+}
+
+.search button {
+    background-color: rgb(65, 56, 113);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.search button:hover {
+    transform: scale(1.15);
+}
+
+#container {
+    padding: 50px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    background-image: url(./asset/Rectangle\ 1.png);
+    width: 342px;
+    height: 200px;
+    /* margin: 10px; */
+    display: flex;
+    background-repeat: no-repeat;
+    /* padding-bottom: 16px; */
+    background-position: bottom;
+    background-size: contain;
+}
+
+.left {
+    padding: 5px 0px 15px 15px;
+    align-self: end;
+}
+
+.left p {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.left .hAndL {
+    color: rgba(235, 235, 245, 0.6); 
+}
+
+.left span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.right > img {
+    height: 160px;
+    width: 160px;
+}
+
+.right span {
+    align-self: flex-end;
+    padding: 0px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* Mobile Devices Media Query */
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+    header {
+        padding: 3vh;
+        font-size: 24px;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        height: auto;
+        width: auto;
+        padding: 10px;
+        border-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    .search button {
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        width: 250px;
+        height: 130px;
+        background-size: contain;
+        padding-bottom: 5px;
+    }
+
+    .left {
+        padding: 10px 20px;
+        align-self: end;
+    }
+
+    .left p {
+        font-size: 44px;
+    }
+
+    .left span {
+        font-size: 12px;
+    }
+
+    .right > img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .right span {
+        padding: 5px 30px;
+    }
+
+}
+
+/* Tablets Devices Media Query */
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    
+    header {
+        padding: 5vh;
+        font-size: 30px;
+    }
+
+    .search {
+        gap: 20px;
+    }
+
+    .search-bar {
+        height: auto;
+        width: auto;
+        padding: 10px;
+        border-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    .search button {
+        padding: 13px 18px;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 8px;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 0;
+        gap: auto;
+    }
+
+    .card{
+        width: 220px;
+        height: 130px;
+        background-size: contain;
+        padding-bottom: 0px;
+    }
+
+    .left {
+        padding: 7px 15px;
+    }
+
+    .left p {
+        font-size: 38px;
+    }
+
+    .left span {
+        font-size: 10px;
+    }
+
+    .right > img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .right span {
+        padding: 5px 30px;
+    }
+}
