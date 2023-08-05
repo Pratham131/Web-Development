@@ -78,7 +78,7 @@ main {
 
 #container {
     padding: 50px;
-    gap: 20px;
+    gap: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -87,26 +87,26 @@ main {
     background-image: url(./asset/Rectangle\ 1.png);
     width: 342px;
     height: 200px;
-    /* margin: 10px; */
     display: flex;
+    justify-content: space-around;
     background-repeat: no-repeat;
-    /* padding-bottom: 16px; */
     background-position: bottom;
     background-size: contain;
 }
 
 .left {
-    padding: 5px 0px 15px 15px;
+    padding: 10px 0;
     align-self: end;
 }
 
 .left p {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 400;
 }
 
 .left .hAndL {
     color: rgba(235, 235, 245, 0.6); 
+    font-size: 12px;
 }
 
 .left span {
@@ -117,7 +117,7 @@ main {
 .right {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    /* width: 40%; */
 }
 
 .right > img {
@@ -126,12 +126,15 @@ main {
 }
 
 .right span {
-    align-self: flex-end;
+    align-self: center;
     padding: 0px 20px;
     font-size: 13px;
     font-weight: 400;
 }
 
+.clouds > img  {
+    src: url("./asset/Rectangle\ 1.png");
+}
 
 /* Mobile Devices Media Query */
 
@@ -167,14 +170,14 @@ main {
     }
 
     .card{
-        width: 250px;
-        height: 130px;
+        width: 310px;
+        height: 145px;
         background-size: contain;
         padding-bottom: 5px;
     }
 
     .left {
-        padding: 10px 20px;
+        padding: 2px 20px;
         align-self: end;
     }
 
@@ -184,6 +187,10 @@ main {
 
     .left span {
         font-size: 12px;
+    }
+
+    .left .hAndL {
+        font-size: 10px;
     }
 
     .right > img {
