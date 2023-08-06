@@ -39,7 +39,7 @@ function capitalizeFirstLetter(str) {
 
 async function fetchWheatherData(city) {
     // ${city}
-    let url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
     let response = await fetch(url);
     let result = await response.json()
 
