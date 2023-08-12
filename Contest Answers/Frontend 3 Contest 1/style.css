@@ -73,7 +73,7 @@ button,  input  {
     border: none;
 }
 
-.movieContainer {
+#movieContainer {
     padding: 20px 45px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -144,7 +144,7 @@ button,  input  {
         padding: 5px 15px;
     }
 
-    .movieContainer {
+    #movieContainer {
         padding: 0;
         display: flex;
         flex-direction: column; 
@@ -186,7 +186,7 @@ button,  input  {
         padding: 5px 15px;
     }
 
-    .movieContainer {
+    #movieContainer {
         padding: 0;
         grid-template-columns: repeat(2, 1fr);
         /* display: grid;
