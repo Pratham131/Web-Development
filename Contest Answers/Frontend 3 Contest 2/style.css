@@ -159,7 +159,7 @@ body {
     line-height: 20px;
 }
 
-.container {
+#container {
     /* padding: 10vh 5vw; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
