@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --black: rgb(1, 0, 1);
+    --purple: rgb(87, 91, 132);
+    --white: #fff;
+    --grey: #B8BDCD;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 100vh; 
+}
+
+.left {
+    background-color: var(--black);
+    width: 50vw;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.left span {
+    color: var(--purple);
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.left p {
+    color: var(--grey);
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.left img{
+    padding-top: 5vh;
+    width: 30vw;
+    height: 55vh;
+    align-self: center;
+}
+
+.right {
+    background-color: var(--purple);
+    width: 50vw;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.right p {
+    color: var(--grey);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.right button {
+    background-color: var(--purple);
+    color: var(--grey);
+    outline: none;
+    border: 2px solid var(--grey);
+    width: 20svw;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.right button:hover {
+    background-color: var(--white);
+    color: var(--grey);
+    border: 2px solid var(--grey);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#section1, #section3, .section4{
+    background-color: var(--black);
+    color: var(--grey);
+    padding: 10px 40px;
+    padding-bottom: 20px;
+}
+
+#section1 p {
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+#section1 table {
+    width: 100%;
+    font-family: "Inter";
+    font-size: 28px;
+    font-weight: 400;
+}
+
+#section2 {
+    background-color: var(--purple);
+    color: var(--grey);
+    text-align: center;
+    padding: 5vh;
+}
+
+#section2 h1 {
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+}
+
+#section2 iframe {
+    width: 80vw;
+    height: 80vh;
+}
+
+#section3 h1, .section4 h1 {
+    font-family: "Montserrat";
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 59px;
+    text-align: center;
+
+}
+
+#section3 p {
+    font-family: "Inter";
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.container {
+    /* padding: 10vh 5vw; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+    padding-top: 5vh;
+}
+
+.card {
+    background-color: var(--purple);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.card p {
+    font-family: "Montserrat";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.searchBar {
+    padding: 15px 30px;
+    border: 2px solid var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+}
+
+.searchBar input {
+    background-color: var(--black);
+    color: var(--grey);
+    outline: none;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 26px;
+    font-weight: 500;
+}
