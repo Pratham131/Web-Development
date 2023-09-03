@@ -78,8 +78,14 @@ function saveSearch(date) {
     let obj = { "Date":date}
 
     const existingDates = JSON.parse(localStorage.getItem('searches')) || [];
-    existingDates.push(obj);
-    localStorage.setItem('searches', JSON.stringify(existingDates));
+    const isObjInArray = existingDates.includes(obj);
+
+    if (!isObjInArray) {
+        console.log('The object is in the array.');
+        existingDates.push(obj);
+        localStorage.setItem('searches', JSON.stringify(existingDates));
+    } 
+    
 
 }
 
@@ -93,8 +99,14 @@ function addSearchToHistory(searchDate){
     unordList.appendChild(li)
 }
 
-function data(data){
-    console.log(data);s
-    // fetchNewData(data)
-}
+const searchHistoryList = document.getElementById("search-history");
+
+searchHistoryList.addEventListener("click", function (event) {
+    if (event.target.tagName === "A") {
+        event.preventDefault();
+        const clickedValue = event.target.textContent;
+        console.log(clickedValue);
+        fetchSearchData(clickedValue);
+    }
+});
 
